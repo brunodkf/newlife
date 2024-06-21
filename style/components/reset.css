@@ -46,6 +46,9 @@ table {
     border-spacing: 0;
 }
 
+a{
+    font-size: 1.125em;
+}
 
 body {
     font-family: var(--fonte-principal);
@@ -60,13 +63,14 @@ h1{
     font-size: 2.5em;
     line-height: normal;
 }
+
 h2{
     font-size: 1.8em;
 }
 
 p {
     color: var(--branco);
-    font-size: 1em;
+    font-size: 1.125em;
     line-height: 1.4em;
 }
 
