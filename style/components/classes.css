@@ -1,0 +1,79 @@
+.classes__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6em 0;
+    padding-top: 0px;
+}
+
+.classes__titulo {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.classes__lista {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 0px;
+}
+
+.classes__item {
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1em;
+    margin-top: 4em;
+}
+
+.classes__card {
+    width: 100%;
+}
+
+.classes__card figure {
+    width: 100%;
+}
+
+.classes__card figcaption {
+    width: 100%;
+}
+
+.classes__card small {
+    opacity: .8;
+}
+
+.classes__card h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: solid 1px var(--preto);
+    margin-bottom: 1em;
+}
+
+.classes__card a {
+    text-decoration: none;
+    color: var(--destaque);
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.classes__card a::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    opacity: .8;
+    display: block;
+    background-image: url(./../../assets/imagens/icons/seta.webp);
+    background-position: center;
+    background-size: contain;
+    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(333deg) brightness(103%) contrast(100%);
+}
+
+.classes__card img {
+    width: 40px;
+    margin-bottom: 4em;
+}

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+body {
+    font-family: var(--fonte-principal);
+    height: 100%;
+    line-height: 1.6;
+    overflow-x: clip;
+    position: relative;
+}
+
+
+h1{
+    font-size: 2.5em;
+    line-height: normal;
+}
+h2{
+    font-size: 1.8em;
+}
+
+p {
+    color: var(--branco);
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: clip;
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+    background-color: var(--branco);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}

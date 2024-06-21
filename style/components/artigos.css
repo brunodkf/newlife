@@ -1,0 +1,63 @@
+.artigos{
+    padding-top: 3em;
+    padding-bottom: 7em;
+}
+.artigos__tag{
+    margin-left: 2.4em;
+}
+.artigos__titulo{
+    text-transform: uppercase;
+}
+.artigos__chamada{
+    width: 100%;
+    text-align: right;
+    margin-bottom: .5em;
+}
+.artigos__chamada a{
+    text-decoration: none;
+    color: var(--destaque);
+    border-bottom: solid 1px var(--destaque);
+}
+.artigos__lista{
+    display: flex;
+    justify-content: space-between;
+}
+
+.artigos__card {
+    width: 30%;
+    height: auto;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 3px;
+}
+.artigos__card img{
+    width: 100%;
+}
+
+.artigos__mais {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+.artigos__card h3 {
+    text-transform: uppercase;
+    padding: .5em 1em;
+}
+
+.artigos__card p{
+    color: var(--preto);
+    opacity: .6;
+    padding: 0 1em;
+}
+.artigos__card a{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--destaque);
+    padding: 0 1em;
+}

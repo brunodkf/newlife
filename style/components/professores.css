@@ -1,0 +1,94 @@
+.professores__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 0;
+}
+
+.professores__titulo{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 1em 0;
+    padding-bottom: .2em;
+}
+
+.professores__decoration{
+    width: 130px;
+    height: 2px;
+    background-color: var(--destaque);
+    margin-bottom: 1em;
+}
+
+.professores__texto{
+    color: var(--preto);
+    font-size: 1.125em;
+    padding-bottom: 3em;
+    opacity: .6;
+}
+
+div.professores__lista{
+    width: 90%;
+    /* width: 60%; */
+    overflow: visible;
+    position: relative;
+    margin-bottom: 5em;
+}
+div.professores__lista::before, div.professores__lista::after{
+    content: '';
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    opacity: .6;
+    background-color: var(--branco);
+    z-index: 2;
+}
+div.professores__lista::before{
+    left: -22%;
+    background: linear-gradient(to right, var(--branco) 65%, transparent 100%);
+}
+div.professores__lista::after{
+    right: -22%;
+    top: 0;
+    background: linear-gradient(to left, var(--branco) 65%, transparent 100%);
+}
+
+/* .professores__card img{
+    opacity: .9;
+} */
+
+.professores__card h3{
+    text-transform: uppercase;
+}
+.professores__card h3{
+    text-transform: uppercase;
+}
+.professores__card p{
+    color: var(--preto);
+    opacity: .6;
+}
+
+/* numbes */
+.professores__contador{
+    /* width: 40%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5em;
+}
+.professores__contador figure{
+    text-align: center;
+}
+.professores__contador img{
+    width: 30px;
+    height: 30px;
+}
+.professores__contador p{
+    font-size: 2em;
+    color: var(--preto);
+}
+.professores__contador small{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: .7;
+}

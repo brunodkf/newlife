@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Life - Fitness Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script async defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__contatos container">
+            <p>Endereço: RJ, Brasil</p>
+            <p>Telefone: (021)3396-7546</p>
+            <p>Email: info@newlife.com</p>
+            <ul>
+                <li><img src="./assets/imagens/socials/facebook.webp" alt="icon socials"></li>
+                <li><img src="./assets/imagens/socials/instagram.webp" alt="icon socials"></li>
+                <li><img src="./assets/imagens/socials/linkedin.webp" alt="icon socials"></li>
+                <li><img src="./assets/imagens/socials/youtube.webp" alt="icon socials"></li>
+                <li><img src="./assets/imagens/socials/zap.webp" alt="icon socials"></li>
+            </ul>
+        </div>
+        <nav class="header__container container">
+            <a href="#" class="header__logo--link">
+                <img class="header__logo--img" src="./assets/imagens/imgLogo.webp" alt="Logo">
+                <p class="header__logo--text">NEWLIFE</p>
+            </a>
+
+            <ul class="header__menu">
+                <li class="header__menu--item"><a href="" class="header__menu--link">Inicio</a></li>
+                <li class="header__menu--item"><a href="" class="header__menu--link">Classes</a></li>
+                <li class="header__menu--item"><a href="" class="header__menu--link">Sobre</a></li>
+                <li class="header__menu--item"><a href="" class="header__menu--link">Horários</a></li>
+                <li class="header__menu--item"><a href="" class="header__menu--link">Professores</a></li>
+                <li class="header__menu--item"><a href="" class="header__menu--link">Blog</a></li>
+            </ul>
+
+            <a class="header__chamada" href="#">
+                <p>Comece Gratuitamente</p>
+                <img src="./assets/imagens/icons/seta.webp" alt="icon setas">
+            </a>
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="banner__container container">
+            <div class="banner__content">
+                <p>Transforme-se</p>
+                <h1>Agora</h1>
+            </div>
+        </div>
+    </section>
+    <section class="calculadora container">
+        <div class="calculadora__container">
+            <h2>Calcule seu índice de massa corporal <b>IMC - Calc</b></h2>
+
+            <form class="calculadora__form">
+                <div class="calculadora__campo">
+                    <input placeholder="50" class="calculadora__form--campo" type="text" name="peso" required="">
+                    <label class="calculadora__form--label" for="peso">Peso [Kg]</label>
+                </div>
+
+                <div class="calculadora__campo">
+                    <input placeholder="1,60" class="calculadora__form--campo" type="text" name="altura" required="">
+                    <label class="calculadora__form--label" for="altura">Altura</label>
+                </div>
+
+                <div class="calculadora__campo">
+                    <input class="calculadora__form--campo" type="text" name="result" disabled>
+                    <label for="result">Resultado</label>
+                </div>
+
+                <input class="calculadora__form--submit cta" type="submit" value="Calcular">
+            </form>
+        </div>
+    </section>
+    <section class="classes">
+        <div class="classes__container container">
+            <span class="classes__tag tag">Nossas Classes</span>
+            <h2 class="classes__titulo titulo">Aqui você encontra tudo o que precisa!</h2>
+
+            <ul class="classes__lista">
+                <li class="classes__item">
+                    <figure class="classes__card">
+                        <img src="./assets/imagens/icons/run.png" alt="run">
+                        <figcaption>
+                            <small>GYM</small>
+                            <h3>Funcional</h3>
+
+                            <a href="#">Saiba mais </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="classes__item">
+                    <figure class="classes__card">
+                        <img src="./assets/imagens/icons/run.png" alt="run">
+                        <figcaption>
+                            <small>GYM</small>
+                            <h3>Jiu-Jitsu</h3>
+
+                            <a href="#">Saiba mais </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="classes__item">
+                    <figure class="classes__card">
+                        <img src="./assets/imagens/icons/run.png" alt="run">
+                        <figcaption>
+                            <small>GYM</small>
+                            <h3>Dança Mix</h3>
+
+                            <a href="#">Saiba mais </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="classes__item">
+                    <figure class="classes__card">
+                        <img src="./assets/imagens/icons/run.png" alt="run">
+                        <figcaption>
+                            <small>GYM</small>
+                            <h3>Muai Thai</h3>
+
+                            <a href="#">Saiba mais </a>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="sobre">
+        <div class="sobre__container container">
+            <div class="sobre__text">
+                <span class="sobre__tag tag">sobre</span>
+                <h2 class="sobre__titulo titulo">Já são mais de 10 anos contruindo sonhos</h2>
+                <p class="sobre__paragrafo">Começamos com a ideia de formar atletas e hoje construimos pessoas
+                    incríveis.</p>
+
+                <ul class="sobre__lista">
+                    <li class="sobre__card">
+                        <div>
+                            <img src="./assets/imagens/icons/run.png" alt="icon run">
+                            <h3>Nossas Origens</h3>
+                        </div>
+                        <div>
+                            <small>Na Estrada da Posse, no Rio de Janeiro, fizemos história</small>
+                            <a href="#">Leia <br> Agora</a>
+                        </div>
+                    </li>
+                    <li class="sobre__card">
+                        <div>
+                            <img src="./assets/imagens/icons/run.png" alt="icon run">
+                            <h3>Nossas Origens</h3>
+                        </div>
+                        <div>
+                            <small>Na Estrada da Posse, no Rio de Janeiro, fizemos história</small>
+                            <a href="#">Leia <br> Agora</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="sobre__chamada">
+                <img src="./assets/imagens/cbum_muscle.jpg" alt="cbum_muscle">
+
+                <div class="sobre__ficha">
+                    <h2>Monte seu treino com os melhores !</h2>
+                    <a href="#">Veja agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="calendario">
+        <div class="calendario__container container">
+            <span class="calendario__tag tag">Nossos Horários</span>
+            <h2 class="calendario__titulo titulo">Conheça nossa rotina e esteja pronto para o desafio!</h2>
+
+            <div class="calendario__horarios">
+                <table class="calendario__tabela">
+                    <tr>
+                        <th></th>
+                        <th>Segunda</th>
+                        <th>Terça</th>
+                        <th>Quarta</th>
+                        <th>Quinta</th>
+                        <th>Sexta</th>
+                    </tr>
+                    <tr>
+                        <th>7h00</th>
+                        <td></td>
+                        <td>Treino Funcional</td>
+                        <td></td>
+                        <td>Treino Funcional</td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <th>19h00</th>
+                        <td>Treino Funcional</td>
+                        <td>Dança Mix</td>
+                        <td>Treino Funcional</td>
+                        <td>Dança Mix</td>
+                        <td>Treino Funcional</td>
+
+                    </tr>
+                    <tr>
+                        <th>20h00</th>
+                        <td>Muay Thai</td>
+                        <td></td>
+                        <td>Muay Thai</td>
+                        <td></td>
+                        <td>Muay Thai</td>
+
+                    </tr>
+                    <tr>
+                        <th>21h00</th>
+                        <td></td>
+                        <td>jiu-jitsu <br> <b>Jhon Andrade</b> </td>
+                        <td></td>
+                        <td>jiu-jitsu <br> <b>Jhon Andrade</b></td>
+                        <td></td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="depoimentos container">
+        <div class="depoimentos__container">
+            <div class="depoimentos__titulo">
+                <span class="depoimentos__tag tag">Depoimentos</span>
+                <h2 class="depoimentos__texto titulo">
+                    Não estamos dizendo nada, são eles...
+                </h2>
+            </div>
+            <div class="depoimentos__depoimento">
+                <figure>
+                    <img src="./assets/imagens/perfilRamon.jpg" alt="user">
+                    <figcaption>
+                        <p>Alex Morgan</p>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </figcaption>
+                </figure>
+                <p class="depoimentos__ref">
+                    Sempre procurei um lugar para treinar onde pudesse alcançar meus objetivos e depois de alcançados,
+                    encontrasse motivação para continuar treinando. Com excelente atendimento,
+                    métodos de treinamento atualizados e dinâmicos, e contando com profissionais qualificados, consigo
+                    alcançar meus objetivos e continuo motivado para treinar!
+                </p>
+            </div>
+            <div class="depoimentos__nav">
+                <div class="depoimentos__button--prev"></div>
+                <div class="depoimentos__button--next"></div>
+            </div>
+        </div>
+    </section>
+    <section class="valores">
+        <div class="valores__container container">
+            <h2>Confira nossos planos</h2>
+
+            <ul class="valores__lista">
+                <li class="valores__card">
+                    <h3>Plano Basic</h3>
+                    <small></small>
+                    <p>R$ 75/mês</p>
+                    <ul>
+                        <li>✓ Musculação</li>
+                    </ul>
+                    <a href="#">Mais informações</a>
+                </li>
+                <li class="valores__card">
+                    <h3>Plano PRO</h3>
+                    <p>R$ 135/mês</p>
+                    <ul>
+                        <li>✓ Musculação</li>
+                        <li>✓ Dança Mix</li>
+                        <li>✓ Funcional</li>
+                    </ul>
+                    <a href="#">Mais informações</a>
+                </li>
+                <li class="valores__card">
+                    <h3>Plano Unlimited</h3>
+                    <p>R$ 195/mês</p>
+                    <ul>
+                        <li>✓ Musculação</li>
+                        <li>✓ Muai Thai</li>
+                        <li>✓ Jiu-Jitsu</li>
+                    </ul>
+                    <a href="#">Mais informações</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="professores">
+        <div class="professores__container container">
+            <span class="professores__tag tag">Nossa Equipe</span>
+            <h2 class="professores__titulo">Contrua seu corpo com os melhores!</h2>
+            <span class="professores__decoration"></span>
+            <p class="professores__texto">Contamos com o melhor time de professores do mercado, todos profissionais
+                renomados e dedicados em
+                transformar vidas.</p>
+
+
+            <div class="professores__lista swiper">
+                <ul class="professores__wrapper swiper-wrapper">
+                    <li class="professores__card swiper-slide" lazy="true">
+                        <figure>
+                            <img src="./assets/imagens/philHeath.jpg" alt="">
+                            <figcaption>
+                                <h3>Phil Heath</h3>
+                                <p>Phillip "Phil" Jerrod Heath, 7 vezes campeão do Mr. Olympia, fisiculturista
+                                    estadunidense considerado um dos maiores de todos os tempos.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="professores__card swiper-slide" lazy="true">
+                        <figure>
+                            <img src="./assets/imagens/aminadembele.jpg" alt="">
+                            <figcaption>
+                                <h3>Amina Dembele</h3>
+                                <p>@womensbest Athlete, embaixadora da marca e influenciadora fitness com mais de 200mil
+                                    seguidores em suas redes sociais</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="professores__card swiper-slide" lazy="true">
+                        <figure>
+                            <img src="./assets/imagens/ramon.jpg" alt="">
+                            <figcaption>
+                                <h3>Ramon Dino</h3>
+                                <p>Ramon Rocha Queiroz, nosso "Dinossauro do Acre", fisiculturista brasileiro,
+                                    atualmente vice-campeão do Mr. Olympia na categoria Classic Physique.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="professores__card swiper-slide" lazy="true">
+                        <figure>
+                            <img src="./assets/imagens/isabellaMira.jpg" alt="">
+                            <figcaption>
+                                <h3>Elizabeth Mira</h3>
+                                <p>Influenciadora Fitness com mais de 500mil seguidores, embaixadora de algumas marcas
+                                    de suplemento e modelo.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="professores__card swiper-slide" lazy="true">
+                        <figure>
+                            <img src="./assets/imagens/cbum_posing.jpg" alt="">
+                            <figcaption>
+                                <h3>Chris Bumstead</h3>
+                                <p>Christopher Adam Bumstead, CBum para os mais chegados, é um fisiculturista canadense,
+                                    atual pentacampeão do Mr. Olympia Classic Physique</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="professores__card swiper-slide" lazy="true">
+                        <figure>
+                            <img src="./assets/imagens/philHeath.jpg" alt="">
+                            <figcaption>
+                                <h3>Phil Heath</h3>
+                                <p>Phillip "Phil" Jerrod Heath, 7 vezes campeão do Mr. Olympia, fisiculturista
+                                    estadunidense considerado um dos maiores de todos os tempos.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="professores__card swiper-slide" lazy="true">
+                        <figure>
+                            <img src="./assets/imagens/aminadembele.jpg" alt="">
+                            <figcaption>
+                                <h3>Amina Dembele</h3>
+                                <p>@womensbest Athlete, embaixadora da marca e influenciadora fitness com mais de 200mil
+                                    seguidores em suas redes sociais</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="professores__card swiper-slide" lazy="true">
+                        <figure>
+                            <img src="./assets/imagens/ramon.jpg" alt="">
+                            <figcaption>
+                                <h3>Ramon Dino</h3>
+                                <p>Ramon Rocha Queiroz, nosso "Dinossauro do Acre", fisiculturista brasileiro,
+                                    atualmente vice-campeão do Mr. Olympia na categoria Classic Physique.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="professores__card swiper-slide" lazy="true">
+                        <figure>
+                            <img src="./assets/imagens/isabellaMira.jpg" alt="">
+                            <figcaption>
+                                <h3>Elizabeth Mira</h3>
+                                <p>Influenciadora Fitness com mais de 500mil seguidores, embaixadora de algumas marcas
+                                    de suplemento e modelo.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="professores__card swiper-slide" lazy="true">
+                        <figure>
+                            <img src="./assets/imagens/cbum_posing.jpg" alt="">
+                            <figcaption>
+                                <h3>Chris Bumstead</h3>
+                                <p>Christopher Adam Bumstead, CBum para os mais chegados, é um fisiculturista canadense,
+                                    atual pentacampeão do Mr. Olympia Classic Physique</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="professores__contador" data-target="contador">
+                <figure>
+                    <img src="./assets/imagens/icons/smile.png" alt="">
+                    <figcaption>
+                        <p class="professores__numero">437</p>
+                        <small>clientes</small>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/imagens/icons/run.png" alt="">
+                    <figcaption>
+                        <p class="professores__numero">235</p>
+                        <small>Expecialistas</small>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/imagens/icons/user.png" alt="">
+                    <figcaption>
+                        <p class="professores__numero">44</p>
+                        <small>Depoimentos</small>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/imagens/icons/peso.png" alt="">
+                    <figcaption>
+                        <p class="professores__numero">17</p>
+                        <small>Atletas</small>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="artigos">
+        <div class="artigos__container container">
+            <span class="artigos__tag tag">Novos Artigos</span>
+            <h2 class="artigos__titulo">Pode ser do seu interesse </h2>
+            <div class="artigos__chamada">
+                <a href="#">Todos os artigos</a>
+            </div>
+            <div class="artigos__lista">
+                <div class="artigos__card">
+                    <img src="./assets/imagens/yoga.jpg" alt="">
+                    <h3 class="artigos__titulo">Os benefícios do yoga nos transtornos de ansiedade</h3>
+                    <p class="artigos__texto">Nos últimos anos, estudos têm mostrado que um grande número de pessoas
+                        experimentará algum tipo de transtorno de ansiedade de maneira contínua ou recorrente. Terapias
+                        complementares como o yoga vêm provando sua eficácia significativa na redução dos sintomas de
+                        ansiedade.
+                    </p>
+                    <div class="artigos__mais">
+                        <p class="artigos__dataCard">OUT 19. 2011</p>
+                        <a target="_blank"
+                            href="http://pepsic.bvsalud.org/scielo.php?script=sci_arttext&pid=S1808-56872011000100009">Leia
+                            Mais</a>
+                    </div>
+                </div>
+                <div class="artigos__card">
+                    <img src="./assets/imagens/dieta.jpg" alt="">
+                    <h3 class="artigos__titulo">25 receitas fitness para variar o cardápio sem sair da dieta</h3>
+                    <p class="artigos__texto">Manter a forma não precisa ser sinônimo de uma alimentação sem graça e sem
+                        sabor: é possível preparar receitas incríveis e que tenham ingredientes que façam parte de uma
+                        dieta balanceada. Para provar isso a você, 25 receitas fitness doces e
+                        salgadas para você fazer.</p>
+                    <div class="artigos__mais">
+                        <p class="artigos__dataCard">AGO 16. 2023</p>
+                        <a target="_blank"
+                            href="https://www.tudogostoso.com.br/noticias/receitas-fitness-a5188.htm">Leia Mais</a>
+                    </div>
+                </div>
+
+                <div class="artigos__card">
+                    <img src="./assets/imagens/corrida.jpg" alt="">
+                    <h3 class="artigos__titulo">Musculação e cardio: combine os seus exercícios favoritos</h3>
+                    <p class="artigos__texto">Ok, mas e aí, o que é melhor, musculação ou treino de cardio? A questão
+                        mais apropriada, na
+                        verdade, deveria ser “o que é melhor para o meu objetivo?”. Guilherme Micheski salienta que
+                        ambas as modalidades são essenciais e podem atuar em diferentes aspectos. </p>
+                    <div class="artigos__mais">
+                        <p class="artigos__dataCard">FEV 18. 2022</p>
+                        <a target="_blank"
+                            href="https://www.smartfit.com.br/news/fitness/musculacao-e-cardio-combine-os-seus-exercicios-favoritos/#:~:text=%E2%80%9CDurante%20a%20execu%C3%A7%C3%A3o%2C%20voc%C3%AA%20ativa,o%20peso%20e%20a%20glicemia.">LEIA
+                            MAIS</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__topo">
+                <div class="footer__logo">
+                   <div>
+                    <img src="./assets/imagens/imgLogo.webp" alt="">
+                    <h2>NEWLIFE</h2>
+                   </div>
+                    <p>Comprometidos com o seu desenvolvimento, esperamos que encontre aqui o incentivo para sua mudança.
+                        <br>
+                        E não se esqueça, só depende de você!
+                    </p>
+                </div>
+                <div class="footer__sitemap">
+                    <ul>
+                        <li class="footer__sitemap--titulo"> <p>informações</p> </li>
+                        <li>sobre</li>
+                        <li>classes</li>
+                        <li>horários</li>
+                        <li>professores</li>
+                    </ul>
+                    <ul>
+                        <li class="footer__sitemap--titulo"> <p>serviços</p> </li>
+                        <li>Treine em casa</li>
+                        <li>Fitness Kids</li>
+                        <li>Coach Online</li>
+                        <li>Campeões</li>
+                    </ul>
+                </div>
+                <div class="footer__newsletter">
+                    <p>Nossa Newsletter</p>
+                    <label for="news">newsletter</label>
+                    <input type="text" name="news" placeholder="Email">
+                    <button>enviar</button>
+                </div>
+            </div>
+            <div class="footer__contatos">
+                <p> © Copyright 2023 Todos os direitos reservados | Developed by <a href="https://brunodkf.netlify.app/">Bruno Furtado</a></p>
+                <p>(021)3396-7546</p>
+                <p>info@newlife.com</p>
+                <ul>
+                    <li><img src="./assets/imagens/socials/facebook.webp" alt="icon socials"></li>
+                    <li><img src="./assets/imagens/socials/instagram.webp" alt="icon socials"></li>
+                    <li><img src="./assets/imagens/socials/linkedin.webp" alt="icon socials"></li>
+                    <li><img src="./assets/imagens/socials/youtube.webp" alt="icon socials"></li>
+                    <li><img src="./assets/imagens/socials/zap.webp" alt="icon socials"></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script/index.js"></script>
+    <script async defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
