@@ -110,3 +110,17 @@
     border: solid 1px var(--branco);
     padding: .5em .8em;
 }
+
+
+@media screen and (width <= 500px){
+    .valores__lista {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .valores__card {
+        width: 100%;
+        max-width: 280px;
+    }
+}
