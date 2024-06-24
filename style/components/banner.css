@@ -50,8 +50,8 @@
     display: none;
     position: absolute;
     width: 25px;
-    bottom: 60px;
-    left: 50%;
+    bottom: 15%;
+    left: 47%;
     animation: slide 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
 }
 
