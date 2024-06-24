@@ -152,6 +152,15 @@ div.professores__lista::after {
     opacity: .7;
 }
 
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    display: none;
+    top: var(--swiper-pagination-top, calc(100% + 1em)) !important;
+}
+.swiper-pagination-bullet-active {
+    background: var(--destaque) !important;
+}
+
 @media screen and (width <=500px) {
     .professores__titulo {
         padding: .5em 0;
@@ -177,5 +186,9 @@ div.professores__lista::after {
         width: 100%;
         padding: 1em;
         padding-bottom: 2em;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        display: block;
     }
 }
