@@ -1,39 +1,41 @@
-.professores__container{
+.professores__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5em 0;
 }
 
-.professores__titulo{
+.professores__titulo {
     letter-spacing: 1px;
     text-transform: uppercase;
     padding: 1em 0;
     padding-bottom: .2em;
 }
 
-.professores__decoration{
+.professores__decoration {
     width: 130px;
     height: 2px;
     background-color: var(--destaque);
     margin-bottom: 1em;
 }
 
-.professores__texto{
+.professores__texto {
     color: var(--preto);
     font-size: 1.125em;
     padding-bottom: 3em;
     opacity: .6;
 }
 
-div.professores__lista{
+div.professores__lista {
     width: 90%;
     /* width: 60%; */
     overflow: visible;
     position: relative;
     margin-bottom: 5em;
 }
-div.professores__lista::before, div.professores__lista::after{
+
+div.professores__lista::before,
+div.professores__lista::after {
     content: '';
     width: 20%;
     height: 100%;
@@ -43,11 +45,13 @@ div.professores__lista::before, div.professores__lista::after{
     background-color: var(--branco);
     z-index: 2;
 }
-div.professores__lista::before{
+
+div.professores__lista::before {
     left: -22%;
     background: linear-gradient(to right, var(--branco) 65%, transparent 100%);
 }
-div.professores__lista::after{
+
+div.professores__lista::after {
     right: -22%;
     top: 0;
     background: linear-gradient(to left, var(--branco) 65%, transparent 100%);
@@ -56,20 +60,45 @@ div.professores__lista::after{
 /* .professores__card img{
     opacity: .9;
 } */
+.professores__card {
+    position: relative;
+}
 
-.professores__card h3{
-    text-transform: uppercase;
+.professores__card::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+
 }
-.professores__card h3{
-    text-transform: uppercase;
+
+.professores__card figcaption {
+    width: 100%;
+    padding: 1em;
+    position: absolute;
+    bottom: 0;
+    color: var(--branco);
+    /* background: linear-gradient(to right, var(--branco) 65%, transparent 100%); */
+    background: var(--preto);
+    background: linear-gradient(0deg, rgb(24, 23, 23) 24%, rgba(0, 0, 0, 0.7343312324929971) 73%, rgba(0, 0, 0, 0) 100%);
 }
-.professores__card p{
-    color: var(--preto);
-    opacity: .6;
+
+.professores__card h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.professores__card p {
+    color: var(--branco);
+    font-size: 1em;
+    opacity: .7;
 }
 
 /* numbes */
-.professores__contador{
+.professores__contador {
     /* width: 40%; */
     display: flex;
     align-items: center;
@@ -77,11 +106,13 @@ div.professores__lista::after{
     gap: 5em;
     margin-top: 4em;
 }
-.professores__contador figure{
+
+.professores__contador figure {
     text-align: center;
     position: relative;
 }
-.professores__icon--img{
+
+.professores__icon--img {
     content: '';
     width: 100%;
     height: 50px;
@@ -92,26 +123,59 @@ div.professores__lista::after{
     background-repeat: no-repeat;
     background-size: contain;
 }
-.professores__contador figure:nth-child(1) .professores__icon--img{
+
+.professores__contador figure:nth-child(1) .professores__icon--img {
     background-image: url(./../../assets/imagens/icons/smile.webp);
 }
-.professores__contador figure:nth-child(2) .professores__icon--img{
+
+.professores__contador figure:nth-child(2) .professores__icon--img {
     background-image: url(./../../assets/imagens/icons/run.webp);
 }
-.professores__contador figure:nth-child(3) .professores__icon--img{
+
+.professores__contador figure:nth-child(3) .professores__icon--img {
     background-image: url(./../../assets/imagens/icons/user.webp);
 }
-.professores__contador figure:nth-child(4) .professores__icon--img{
+
+.professores__contador figure:nth-child(4) .professores__icon--img {
     background-image: url(./../../assets/imagens/icons/peso.webp);
 }
 
 
-.professores__contador p{
+.professores__contador p {
     font-size: 2em;
     color: var(--preto);
 }
-.professores__contador small{
+
+.professores__contador small {
     text-transform: uppercase;
     letter-spacing: 1px;
     opacity: .7;
+}
+
+@media screen and (width <=500px) {
+    .professores__titulo {
+        padding: .5em 0;
+        text-align: center;
+    }
+
+    .professores__texto {
+        text-align: center;
+    }
+    div.professores__lista {
+        width: 70%;
+    }
+
+    div.professores__lista::before {
+        left: -35%;
+        background: linear-gradient(to right, var(--branco) 20%, transparent 100%);
+    }
+    div.professores__lista::after {
+        right: -35%;
+        background: linear-gradient(to left, var(--branco) 20%, transparent 100%);
+    }
+    .professores__card figcaption {
+        width: 100%;
+        padding: 1em;
+        padding-bottom: 2em;
+    }
 }
