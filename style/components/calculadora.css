@@ -57,3 +57,26 @@
 .calculadora__form--campo:focus-visible {
     outline: none;
 }
+
+
+
+@media screen and (width <= 500px) {
+    .calculadora {
+        top: -150px;
+    }
+    .calculadora__container {
+        padding: 0 1em;
+        flex-direction: column;
+    }
+    .calculadora__container h2 {
+        width: 100%;
+        padding: 1em 0;
+    }
+    .calculadora__form {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        width: 100%;
+        padding-bottom: 2em;
+    }
+}
