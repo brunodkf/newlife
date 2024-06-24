@@ -88,3 +88,31 @@
     transform: rotate(180deg);
 }
 
+@media screen and (width <= 500px){
+    .depoimentos__container {
+        flex-direction: column;
+    }
+    .depoimentos__titulo {
+        margin-bottom: 2em;
+    }
+    .depoimentos__texto {
+        text-align: center;
+    }
+    .depoimentos__depoimento {
+        padding: 0px;
+    }
+    .depoimentos__ref {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    .depoimentos__ref::before {
+        content: '';
+        width: 60px;
+        height: 60px;
+        right: 1em;
+        top: -1em;
+    }
+    .depoimentos__nav {
+        width: 100%;
+    }
+}
