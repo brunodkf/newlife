@@ -79,8 +79,21 @@
 }
 
 
-@media screen and (width <= 500px) {
-    .classes{
+@media screen and (width <=500px) {
+    .classes {
         margin-top: 5em;
+    }
+
+    .classes__titulo {
+        text-align: center;
+    }
+
+    .classes__lista {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 40px;
+        grid-row-gap: 0px;
     }
 }
