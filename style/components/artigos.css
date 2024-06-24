@@ -61,3 +61,14 @@
     color: var(--destaque);
     padding: 0 1em;
 }
+
+
+@media screen and (width <=500px){
+    .artigos__lista {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .artigos__card {
+        width: 100%;
+    }
+}
