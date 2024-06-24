@@ -77,3 +77,10 @@
     width: 40px;
     margin-bottom: 4em;
 }
+
+
+@media screen and (width <= 500px) {
+    .classes{
+        margin-top: 5em;
+    }
+}
