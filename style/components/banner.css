@@ -1,4 +1,4 @@
-.banner{
+.banner {
     height: 100vh;
     background-image: url(./../../assets/imagens/backgroundBanner.webp);
     background-position: center;
@@ -7,9 +7,10 @@
     display: flex;
     align-items: center;
     position: relative;
-    
+
 }
-.banner::before{
+
+.banner::before {
     content: '';
     width: 100%;
     height: 100%;
@@ -18,12 +19,14 @@
     background-color: var(--preto);
     opacity: .5;
 }
-.banner__container{
+
+.banner__container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.banner__content{
+
+.banner__content {
     width: 40%;
     border: solid 7px var(--destaque);
     text-align: center;
@@ -31,24 +34,48 @@
     margin-top: 3em;
     z-index: 1;
 }
-.banner__content p{
+
+.banner__content p {
     font-size: 2em;
 }
-.banner__content h1{
+
+.banner__content h1 {
     color: var(--branco);
     font-size: 11vw;
     text-transform: uppercase;
 }
 
 
+.banner__bottom {
+    display: none;
+    position: absolute;
+    width: 25px;
+    bottom: 60px;
+    left: 50%;
+    animation: slide 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+}
 
-@media screen and (width >= 1901px) {
+@keyframes slide {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+@media screen and (width >=1901px) {
     .banner__content h1 {
         font-size: 8vw;
     }
 }
 
-@media screen and (width <= 500px) {
+@media screen and (width <=500px) {
     .banner__content {
         width: 100%;
         height: 30vh;
@@ -57,7 +84,12 @@
         align-items: center;
         justify-content: center;
     }
+
     .banner__content h1 {
         font-size: 30vw;
+    }
+
+    .banner__bottom {
+        display: block;
     }
 }
