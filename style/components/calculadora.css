@@ -62,7 +62,7 @@
 
 @media screen and (width <= 500px) {
     .calculadora {
-        top: -150px;
+        top: 20px;
     }
     .calculadora__container {
         padding: 0 1em;
