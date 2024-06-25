@@ -89,3 +89,21 @@ const observer = new IntersectionObserver(e => {
 })
 
 observer.observe(contadorContainer)
+
+
+
+
+// imc
+const formulario = document.querySelector('.calculadora__form');
+const valores = document.querySelectorAll('.calc__campo');
+const resultado = document.querySelector('.calc__resultado');
+
+formulario.addEventListener('submit', (e)=> {
+    e.preventDefault();
+    let peso = valores[0].value;
+    let altura = valores[1].value;
+
+    let imc = peso / altura ** 2;
+
+    resultado.value = imc.toFixed(2);
+});
