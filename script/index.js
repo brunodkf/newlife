@@ -98,12 +98,28 @@ const formulario = document.querySelector('.calculadora__form');
 const valores = document.querySelectorAll('.calc__campo');
 const resultado = document.querySelector('.calc__resultado');
 
-formulario.addEventListener('submit', (e)=> {
+
+formulario.addEventListener('submit', (e) => {
     e.preventDefault();
     let peso = valores[0].value;
     let altura = valores[1].value;
 
     let imc = peso / altura ** 2;
 
-    resultado.value = imc.toFixed(2);
+    let fraseEscolhida = '';
+
+    if (imc <= 18.5) {
+        fraseEscolhida = 'Magreza';
+    } else if (imc <= 24.9) {
+        fraseEscolhida = "IMC Normal";
+    } else if (imc <= 29.9) {
+        fraseEscolhida = 'Sobrepeso';
+    } else if (imc <= 39.9) {
+        fraseEscolhida = 'Obesidade';
+    } else if (imc >= 40) {
+        fraseEscolhida = 'Obesidade Grave';
+    }
+
+
+    resultado.value = `${imc.toFixed(2)} => Isso indica: ${fraseEscolhida}.`;
 });
