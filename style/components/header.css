@@ -65,14 +65,16 @@
     text-decoration: none;
     color: var(--branco);
 }
-@keyframes slide {
+@keyframes menuAnimation {
     0%{
         opacity: 0;
-        transform: translateY(-10%);
+        /* transform: translateY(-10%); */
+        transform: scale(0.8);
     }
     100%{
         opacity: 1;
-        transform: translateY(0%);
+        /* transform: translateY(0%); */
+        transform: scale(1);
     }
 }
 .header.active{
@@ -100,7 +102,7 @@
     top: 0;
     left: 0;
     gap: 3em;
-    animation: slide .5s both;
+    animation: menuAnimation .5s both;
 }
 .header.active .header__chamada {
     height: auto;
@@ -113,7 +115,7 @@
     bottom: 5em;
     left: 3em;
     right: 3em;
-    animation: slide .5s both;
+    animation: menuAnimation .5s both;
 }
 
 .header__chamada{
