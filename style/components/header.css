@@ -106,15 +106,15 @@
 }
 .header.active .header__chamada {
     height: auto;
-    padding: 1em 1em;
+    padding: 1em;
     background-color: var(--destaque);
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 5em;
-    left: 3em;
-    right: 3em;
+    bottom: 2em;
+    left: 1em;
+    right: 1em;
     animation: menuAnimation .5s both;
 }
 
