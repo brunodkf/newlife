@@ -217,3 +217,9 @@
         font-size: 1.1em;
     }
 }
+
+@media screen and (height >= 741px){
+    .header.active .header__chamada {
+        bottom: 4.5em;
+    }
+}
