@@ -63,7 +63,7 @@
 }
 
 
-@media screen and (width <=500px){
+@media screen and (width <= 768px){
     .artigos__lista {
         flex-direction: column;
         gap: 30px;
@@ -71,4 +71,19 @@
     .artigos__card {
         width: 100%;
     }
+}
+
+@media screen and (width >= 769px) and (width <= 900px){
+    .artigos__lista {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .artigos__card {
+        width: 100%;
+    }  
+}
+
+@media screen and (width >= 901px) and (width <= 1024px){
+    .artigos__card {
+        width: 32%;}
 }
