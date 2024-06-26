@@ -138,7 +138,7 @@
 
 
 
-@media screen and (width <=500px) {
+@media screen and (width <= 768px) {
     .footer__topo {
         flex-direction: column;
     }
@@ -184,5 +184,13 @@
     }
     .footer__contatos b{
         display: none;
+    }
+}
+
+@media screen and (width >= 769px) and (width <= 900px){
+    .footer__contatos {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
     }
 }
