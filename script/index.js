@@ -1,20 +1,39 @@
 // menu mobile
 const menu = document.querySelector('.header');
 const btnMobile = document.querySelector('[data-button-menu]');
+const corpoSite = document.querySelector('html');
 
 btnMobile.addEventListener('click', () => {
     menu.classList.toggle('active');
+
+    corpoSite.style = 'overflow: hidden;';
+
+    if (document.querySelector('.header.active') == null) {
+        corpoSite.removeAttribute("style");
+    }
 
     const someBarra = () => {
         if (window.scrollY >= 500) {
             menu.classList.remove('active');
             document.querySelector('#checkbox-menu').checked = false;
+            corpoSite.removeAttribute("style");
+        }
+
+        if (window.innerWidth > 1100) { //condição ativada ao atingir o valor de largura determinado
+            menu.classList.remove('active');
+            document.querySelector('#checkbox-menu').checked = false;
+            corpoSite.removeAttribute("style");
         }
     }
 
     window.addEventListener('scroll', () => {
         someBarra();
     });
+
+    window.addEventListener('resize', () => {
+        someBarra();
+    });
+
 })
 
 
@@ -43,7 +62,7 @@ const swiper = new Swiper('.professores__lista', {
             slidesPerView: 1,
             spaceBetween: 20,
         },
-        "@0.75": {
+        "@0.6": {
             slidesPerView: 2,
             spaceBetween: 20,
         },
@@ -121,5 +140,5 @@ formulario.addEventListener('submit', (e) => {
     }
 
 
-    resultado.value = `${imc.toFixed(2)} => Isso indica: ${fraseEscolhida}.`;
+    resultado.value = `${imc.toFixed(2)} => ${fraseEscolhida}.`;
 });

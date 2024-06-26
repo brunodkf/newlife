@@ -126,7 +126,7 @@
     align-items: center;
 }
 .header__chamada p{
-    margin-right: 1em;
+    margin-right: .5em;
 }
 .header__chamada img{
     width: 20px;
