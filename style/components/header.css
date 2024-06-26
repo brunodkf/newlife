@@ -101,7 +101,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    gap: 3em;
+    gap: 2.5em;
     animation: menuAnimation .5s both;
 }
 .header.active .header__chamada {
