@@ -40,7 +40,7 @@ btnMobile.addEventListener('click', () => {
 
 const swiper = new Swiper('.professores__lista', {
 
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
 
     direction: 'horizontal',
@@ -57,24 +57,39 @@ const swiper = new Swiper('.professores__lista', {
         prevEl: '.swiper-button-prev',
     },
 
+    // breakpoints: {
+    //     "@0.00": {
+    //         slidesPerView: 1,
+    //         spaceBetween: 20,
+    //     },
+    //     "@0.6": {
+    //         slidesPerView: 2,
+    //         spaceBetween: 20,
+    //     },
+    //     "@1.00": {
+    //         slidesPerView: 3,
+    //         spaceBetween: 40,
+    //     },
+    //     "@1.50": {
+    //         slidesPerView: 4,
+    //         spaceBetween: 50,
+    //     },
+    // },
+
     breakpoints: {
-        "@0.00": {
-            slidesPerView: 1,
-            spaceBetween: 20,
+        500: {
+          slidesPerView: 2,
+          spaceBetween: 20,
         },
-        "@0.6": {
-            slidesPerView: 2,
-            spaceBetween: 20,
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 10,
         },
-        "@1.00": {
-            slidesPerView: 3,
-            spaceBetween: 40,
+        1100: {
+          slidesPerView: 4,
+          spaceBetween: 30,
         },
-        "@1.50": {
-            slidesPerView: 4,
-            spaceBetween: 50,
-        },
-    },
+      },
 });
 
 

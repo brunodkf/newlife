@@ -95,6 +95,7 @@ div.professores__lista::after {
     color: var(--branco);
     font-size: 1em;
     opacity: .7;
+    line-height: 1em;
 }
 
 /* numbes */
@@ -205,5 +206,22 @@ div.professores__lista::after {
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+    }
+}
+
+@media screen and (width >= 1700px) {
+    div.professores__lista::after {
+        right: -36%;
+    }
+    div.professores__lista::before {
+        left: -36%;
+    }
+}
+@media screen and (width >= 1900px) {
+    div.professores__lista::after {
+        right: -52%;
+    }
+    div.professores__lista::before {
+        left: -52%;
     }
 }

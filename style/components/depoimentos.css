@@ -116,3 +116,18 @@
         width: 100%;
     }
 }
+
+@media screen and (width > 501px) and (width <= 768px) {
+    .depoimentos__container {
+        flex-direction: column;
+    }
+    .depoimentos__titulo {
+        margin-bottom: 1em;
+    }
+    .depoimentos__depoimento {
+        margin-bottom: 1em;
+    }
+    .depoimentos__nav {
+        width: 100%;
+    }
+}
