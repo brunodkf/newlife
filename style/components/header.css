@@ -112,7 +112,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 3.5em;
+    bottom: 4em;
     left: 1em;
     right: 1em;
     animation: menuAnimation .5s both;
@@ -190,4 +190,23 @@
         z-index: 99999;
     }
 
+}
+
+
+@media screen and (height <= 640px) {
+    .header.active .header__menu {
+        top: 1em;
+        gap: 2em;
+    }
+    .header.active .header__menu--item a {
+        font-size: 1.1em;
+    }
+    .header.active .header__chamada {
+        bottom: 1em;
+    }
+}
+@media screen and (height >= 641px) and (height <= 740px){
+    .header.active .header__chamada {
+        bottom: 2em;
+    }
 }
