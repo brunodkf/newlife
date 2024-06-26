@@ -129,7 +129,7 @@
     filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(333deg) brightness(103%) contrast(100%);
 }
 
-@media screen and (width <= 500px){
+@media screen and (width <= 768px){
     .sobre {
         margin-top: 2em;
         padding-bottom: 4em;
@@ -169,6 +169,18 @@
     }
     .sobre__chamada {
         margin-top: 3em;
+    }
+    .sobre__ficha {
+        width: 80%;
+    }
+}
+
+@media screen and (width >= 501px) and (width <= 768px) {
+    .sobre__chamada {
+        margin-top: 3em;
+    }
+    .sobre__chamada img {
+        width: 60%;
     }
     .sobre__ficha {
         width: 80%;
