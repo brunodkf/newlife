@@ -207,6 +207,13 @@
 }
 @media screen and (height >= 641px) and (height <= 740px){
     .header.active .header__chamada {
-        bottom: 2em;
+        bottom: 3em;
+    }
+    .header.active .header__menu {
+        top: 1em;
+        gap: 2em;
+    }
+    .header.active .header__menu--item a {
+        font-size: 1.1em;
     }
 }
