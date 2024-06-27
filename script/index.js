@@ -1,13 +1,4 @@
-window.addEventListener("load", ()=>{
-    document.querySelector('.testeLoad.block').classList.remove('block');
-    document.querySelector('html').style = 'overflow: hidden;'
 
-    setTimeout(()=>{
-        console.log("Delayed for 1 second.");
-        document.querySelector('.testeLoad').classList.add('block');
-        document.querySelector('html').style = 'overflow: auto;'
-    }, 2000);
-});
 
 
 // menu mobile
