@@ -5,6 +5,7 @@ window.addEventListener("load", ()=>{
     setTimeout(()=>{
         console.log("Delayed for 1 second.");
         document.querySelector('.testeLoad').classList.add('block');
+        document.querySelector('html').style = 'overflow: auto;'
     }, 2000);
 });
 
