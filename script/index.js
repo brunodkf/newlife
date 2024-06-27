@@ -1,3 +1,14 @@
+window.addEventListener("load", ()=>{
+    document.querySelector('.testeLoad.block').classList.remove('block');
+    document.querySelector('html').style = 'overflow: hidden;'
+
+    setTimeout(()=>{
+        console.log("Delayed for 1 second.");
+        document.querySelector('.testeLoad').classList.add('block');
+    }, 2000);
+});
+
+
 // menu mobile
 const menu = document.querySelector('.header');
 const btnMobile = document.querySelector('[data-button-menu]');
@@ -57,39 +68,20 @@ const swiper = new Swiper('.professores__lista', {
         prevEl: '.swiper-button-prev',
     },
 
-    // breakpoints: {
-    //     "@0.00": {
-    //         slidesPerView: 1,
-    //         spaceBetween: 20,
-    //     },
-    //     "@0.6": {
-    //         slidesPerView: 2,
-    //         spaceBetween: 20,
-    //     },
-    //     "@1.00": {
-    //         slidesPerView: 3,
-    //         spaceBetween: 40,
-    //     },
-    //     "@1.50": {
-    //         slidesPerView: 4,
-    //         spaceBetween: 50,
-    //     },
-    // },
-
     breakpoints: {
         500: {
-          slidesPerView: 2,
-          spaceBetween: 20,
+            slidesPerView: 2,
+            spaceBetween: 20,
         },
         768: {
-          slidesPerView: 3,
-          spaceBetween: 10,
+            slidesPerView: 3,
+            spaceBetween: 10,
         },
         1100: {
-          slidesPerView: 4,
-          spaceBetween: 30,
+            slidesPerView: 4,
+            spaceBetween: 30,
         },
-      },
+    },
 });
 
 
@@ -157,3 +149,7 @@ formulario.addEventListener('submit', (e) => {
 
     resultado.value = `${imc.toFixed(2)} => ${fraseEscolhida}.`;
 });
+
+
+
+
