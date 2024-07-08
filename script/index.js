@@ -1,5 +1,5 @@
-
-
+import Swiper from 'swiper';
+import 'swiper/css';
 
 // menu mobile
 const menu = document.querySelector('.header');
