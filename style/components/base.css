@@ -6,9 +6,10 @@
     /* Cores Principais */
     --preto: #1e1e1e;
     --branco: #EDEDED;
-    --destaque: #FD0054;
+    /* --destaque: #FD0054; */
+    --destaque: #00639c;
  
-    --azul: #00387f;
+    --azul: #00639c;
 }
 
 
