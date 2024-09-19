@@ -31,7 +31,7 @@
 
 .footer__logo img {
     width: 80px;
-    filter: invert(70%) sepia(84%) saturate(5804%) hue-rotate(334deg) brightness(103%) contrast(108%);
+    border-radius: 20px;
 }
 
 .footer__logo h2 {

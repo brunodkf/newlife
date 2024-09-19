@@ -57,7 +57,7 @@
 
 }
 .valores__card:nth-child(2){
-    background:rgb(253, 0, 84, 0.60);
+    background: rgb(50 98 190 / 60%);
 }
 
 .valores__card:hover{

@@ -36,7 +36,7 @@
 }
 
 .depoimentos__depoimento span{
-    filter: invert(70%) sepia(84%) saturate(5804%) hue-rotate(334deg) brightness(103%) contrast(108%);
+    filter: invert(70%) sepia(84%) saturate(5000%) hue-rotate(334deg) brightness(903%) contrast(108%);
 }
 
 .depoimentos__depoimento img{
@@ -82,7 +82,7 @@
     background-image: url(./../../assets/imagens/icons/seta.webp);
     background-position: center;
     background-size: contain;
-    filter: invert(70%) sepia(84%) saturate(5804%) hue-rotate(334deg) brightness(103%) contrast(108%);
+    filter: invert(70%) sepia(84%) saturate(5804%) hue-rotate(334deg) brightness(103%) contrast(0%);
 }
 .depoimentos__button--prev{
     transform: rotate(180deg);
